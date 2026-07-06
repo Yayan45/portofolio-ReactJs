@@ -8,38 +8,45 @@ const Portofolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      title: "Complaints from the People of Pemalang District",
+      title: "Trusted News AI",
       description:
-        "The Pemalang Regency Community Complaints Website is a digital platform that allows the public to report various incidents that occur in the area. Built using the programming languages PHP, JavaScript, HTML, CSS, and utilizing the responsive design advantages of Bootstrap, this site provides an effective means for monitoring and reporting important events.",
-      image: "img/portfolio/pengaduan.png",
+        "Trusted News AI is an AI-powered web application developed to analyze the credibility of online news headlines. Built using React.js, Tailwind CSS, Express.js, and REST API integration, the application provides news credibility analysis, confidence scores, and trusted news recommendations to help users identify misinformation.",
+      image: "img/portfolio/trustednewsai.png",
     },
     {
       id: 2,
-      title: "The Tank Museum",
+      title: "Kost Management Website",
       description:
-        "The Tank Museum website, built according to the client's wishes, is a digital platform that provides a holistic experience regarding the history and technical specifications of tanks. Using HTML, CSS, JavaScript, and Bootstrap, the site allows visitors to explore an impressive collection of tanks with intuitive navigation.",
-      image: "img/portfolio/1.png",
+        "A web-based boarding house management system that simplifies room, tenant, and financial management. Developed using PHP, JavaScript, Bootstrap, and MySQL with features including room management, tenant registration, and financial reporting.",
+      image: "img/portfolio/kost.png",
     },
     {
       id: 3,
       title: "Cashier Application",
       description:
-        "  I created the cashier website when I took the LSP-P1 vocational exam. This website uses PHP, JavaScript, HTML, CSS, and the experience. With features such as sales management, inventory, transactions, customers, and user management, this website ensures operational efficiency and improves customer service.",
+        "A web-based cashier application developed for the LSP-P1 competency assessment. Built using PHP, JavaScript, HTML, CSS, and MySQL with features for product management, sales transactions, inventory, customers, and reports.",
       image: "img/portfolio/resto.png",
     },
     {
       id: 4,
-      title: "Wedding App",
+      title: "Public Complaint Website",
       description:
-        " As the first step of my digital startup, I designed and launched an innovative digital invitation website. The platform offers an easy-to-use interface and advanced features to make creating and managing event invitations easy. This project reflects my commitment to innovation and quality in every project I work on.",
-      image: "img/portfolio/weddingApp.png",
+        "A web platform that allows citizens to submit and monitor public complaints online. Developed using PHP, JavaScript, HTML, CSS, and Bootstrap with a responsive interface.",
+      image: "img/portfolio/pengaduan.png",
     },
     {
       id: 5,
-      title: "Kost Management Website",
+      title: "Wedding Invitation Website",
       description:
-        "In this project, I developed a comprehensive web platform to streamline the management of boarding houses. The website offers various features to assist property owners in managing rooms, tenants, and finances. The room management feature allows owners to easily update the status of rooms. The tenant management feature helps owners register new tenants and monitor existing tenant data. Additionally, the platform provides detailed income reports and financial statements, allowing property owners to track their earnings, expenses, and other financial details. This project is designed to provide property owners with an efficient and organized way to manage the daily operations of their boarding houses.",
-      image: "img/portfolio/kost.png",
+        "A responsive digital wedding invitation website featuring event information, countdown timer, gallery, RSVP, and location details using React.js and Tailwind CSS.",
+      image: "img/portfolio/weddingApp.png",
+    },
+    {
+      id: 6,
+      title: "The Tank Museum",
+      description:
+        "A responsive museum website developed based on client requirements to showcase tank history, collections, and technical specifications. Built using HTML, CSS, JavaScript, and Bootstrap with an intuitive user interface.",
+      image: "img/portfolio/1.png",
     },
   ];
 
@@ -47,11 +54,11 @@ const Portofolio = () => {
     <>
       <section
         id="portfolio"
-        className="bg-slate-100 pt-36 pb-16 dark:bg-slate-800"
+        className="pb-16 bg-slate-100 pt-36 dark:bg-slate-800"
       >
         <div className="container">
           <div className="w-full px-4">
-            <div className="mx-auto mb-16 max-w-xl text-center">
+            <div className="max-w-xl mx-auto mb-16 text-center">
               <h4 className="mb-2 text-lg font-semibold text-hero">
                 Portfolio
               </h4>
@@ -62,7 +69,7 @@ const Portofolio = () => {
           </div>
 
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full px-4 xl:mx-auto xl:w-10/12"
+            className="grid w-full grid-cols-1 gap-6 px-4 sm:grid-cols-2 xl:mx-auto xl:w-10/12"
             data-aos="fade-up"
           >
             {portfolioItems.map((item) => (
@@ -83,7 +90,7 @@ const Portofolio = () => {
                       {item.title}
                     </h5>
                   </a>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">
+                  <p className="mb-3 font-normal text-justify text-gray-700 dark:text-gray-400">
                     {item.description}
                   </p>
                   <a

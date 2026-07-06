@@ -6,17 +6,17 @@ const Hero = () => {
       <section id="home" className="pt-36 dark:bg-dark">
         <div className="container">
           <div className="flex flex-wrap">
-            <div className="w-full self-center px-4 lg:w-1/2">
+            <div className="self-center w-full px-4 lg:w-1/2">
               <h1 className="text-base font-semibold md:text-xl">
                 <span className="text-hero">Hi, There!👋</span>
-                <span className="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl animate__animated animate__jello">
+                <span className="block mt-1 text-4xl font-bold text-dark dark:text-white lg:text-5xl animate__animated animate__jello">
                   Yayan Rif 'an A.
                 </span>
               </h1>
-              <h2 className="mb-5 text-lg font-medium text-secondary lg:text-2xl mt-2">
+              <h2 className="mt-2 mb-5 text-lg font-medium text-secondary lg:text-2xl">
                 informatics engineering student ||{" "}
                 <span className="text-title" style={{ color: "#FFA33C" }}>
-                  Front end developer
+                  Full Stack developer
                 </span>
               </h2>
 
@@ -24,7 +24,7 @@ const Hero = () => {
                 <a
                   href="https://www.instagram.com/yayan_gantenggg/"
                   target="_blank"
-                  className=" icon w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300  animate__animated animate__lightSpeedInRight"
+                  className="flex items-center justify-center mr-3 border rounded-full icon w-9 h-9 border-slate-300 text-slate-300 animate__animated animate__lightSpeedInRight"
                 >
                   <svg
                     role="img"
@@ -41,7 +41,7 @@ const Hero = () => {
                 <a
                   href="https://web.facebook.com/yayan.rifan.96"
                   target="_blank"
-                  className=" icon w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300  text-slate-300 animate__animated animate__lightSpeedInRight animate__fast"
+                  className="flex items-center justify-center mr-3 border rounded-full icon w-9 h-9 border-slate-300 text-slate-300 animate__animated animate__lightSpeedInRight animate__fast"
                 >
                   <svg
                     role="img"
@@ -58,7 +58,7 @@ const Hero = () => {
                 <a
                   href="https://github.com/Yayan45"
                   target="_blank"
-                  className=" icon w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300  text-slate-300 animate__animated animate__lightSpeedInRight animate__slow"
+                  className="flex items-center justify-center mr-3 border rounded-full icon w-9 h-9 border-slate-300 text-slate-300 animate__animated animate__lightSpeedInRight animate__slow"
                 >
                   <svg
                     role="img"
@@ -75,7 +75,7 @@ const Hero = () => {
                 <a
                   href="https://www.linkedin.com/in/yayan-rif-an-awaludin-b41001254/"
                   target="_blank"
-                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 icon animate__animated animate__lightSpeedInRight animate__slow"
+                  className="flex items-center justify-center mr-3 border rounded-full h-9 w-9 border-slate-300 text-slate-300 icon animate__animated animate__lightSpeedInRight animate__slow"
                 >
                   <svg
                     role="img"
@@ -91,17 +91,17 @@ const Hero = () => {
               </div>
 
               <a
-                href="/img/MyCV.pdf"
+                href="/img/cv.pdf"
                 target="_blank"
-                className="rounded-full bg-hero py-2 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+                className="px-8 py-2 text-base font-semibold text-white transition duration-300 ease-in-out rounded-full bg-hero hover:opacity-80 hover:shadow-lg"
               >
                 Download cv
               </a>
             </div>
-            <div className="w-full self-end px-4 lg:w-1/2">
+            <div className="self-end w-full px-4 lg:w-1/2">
               <div className="relative mt-10 lg:right-0 lg:mt-9">
                 <img src="/img/saya.png" className="relative z-10 mx-auto" />
-                <span className="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+                <span className="absolute bottom-0 -translate-x-1/2 left-1/2 md:scale-125">
                   <svg
                     className="animate__animated animate__infinite animate__tada animate__slower"
                     width="400"
@@ -120,19 +120,19 @@ const Hero = () => {
             </div>
           </div>
           <div className="mt-12 border rounded-lg">
-            <h1 className="text-center text-dark dark:text-white mt-4 tracking-widest">
+            <h1 className="mt-4 tracking-widest text-center text-dark dark:text-white">
               Tech Stack
             </h1>
-            <div className="flex flex-wrap items-center justify-center p-4 max-w-md mx-auto md:max-w-4xl">
+            <div className="flex flex-wrap items-center justify-center max-w-md p-4 mx-auto md:max-w-4xl">
               <img src="/img/html.png" className="w-20 md:w-40" />
               <img
                 src="/img/css.png"
-                className="w-20 md:w-40 -ml-4 md:-ml-12"
+                className="w-20 -ml-4 md:w-40 md:-ml-12"
               />
               <img src="/img/js.png" className="w-12 md:w-24" />
               <img
                 src="/img/tailwind.png"
-                className="w-16 md:w-30 ml-2 md:ml-8"
+                className="w-16 ml-2 md:w-30 md:ml-8"
               />
               <img src="/img/react.png" className="w-20 md:w-40" />
             </div>

@@ -12,6 +12,7 @@ const Gallery = () => {
     { src: "/img/gallery/5.jpg" },
     { src: "/img/gallery/6.jpg" },
     { src: "/img/gallery/3.jpg" },
+    { src: "/img/gallery/7.png" },
   ];
 
   // Handle image click to open the modal
@@ -28,26 +29,26 @@ const Gallery = () => {
 
   return (
     <div className="dark:bg-dark">
-      <div className="container mx-auto px-6 py-12">
+      <div className="container px-6 py-12 mx-auto">
         <h1 className="text-4xl font-bold text-center text-[#FF9D1A] mb-12">
           Gallery
         </h1>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {images.map((image, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="relative overflow-hidden transition-transform duration-300 ease-in-out transform rounded-lg shadow-lg group hover:scale-105"
               onClick={() => openModal(image)}
             >
               <img
                 src={image.src}
                 alt={image.title}
-                className="w-full h-full object-cover group-hover:opacity-80 transition-opacity duration-300"
+                className="object-cover w-full h-full transition-opacity duration-300 group-hover:opacity-80"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-white text-xl font-semibold">
+              <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
+                <span className="text-xl font-semibold text-white">
                   {image.title}
                 </span>
               </div>
@@ -58,11 +59,11 @@ const Gallery = () => {
         {/* Modal */}
         {isModalOpen && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70"
             onClick={closeModal}
           >
             <div
-              className="relative bg-white p-4 rounded-lg"
+              className="relative p-4 bg-white rounded-lg"
               onClick={(e) => e.stopPropagation()}
             >
               <button

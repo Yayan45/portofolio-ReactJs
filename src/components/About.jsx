@@ -5,11 +5,11 @@ const About = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <section id="about" className="pt-36 pb-32 dark:bg-dark">
+      <section id="about" className="pb-32 pt-36 dark:bg-dark">
         <div className="container">
           <div className="flex flex-wrap">
             <div
-              className="mb-10 w-full px-4 lg:w-1/2"
+              className="w-full px-4 mb-10 lg:w-1/2"
               data-aos="fade-up-right"
               data-aos-delay="200"
             >
@@ -17,20 +17,17 @@ const About = () => {
                 About Me
               </h4>
               <p
-                className="max-w-xl text-base font-medium text-secondary lg:text-lg text-justify"
+                className="max-w-xl text-base font-medium text-justify text-secondary lg:text-lg"
                 style={{ textAlign: "justify" }}
               >
-                I am a student from Dian Nuswantoro University Semarang and a
-                graduate of SMK majoring in Software Engineering. My experience
-                in creating websites while at Vocational School has enriched my
-                technical skills. As a student, I was involved in academic
-                projects that involved in-depth analysis and participated in an
-                academic environment that supported the development of
-                interpersonal skills. I have a passion to continue learning and
-                developing, following the latest developments in the IT
-                industry. With my formal education and practical background, I
-                am confident that I am ready to become a web developer and
-                contribute to the information technology industry.
+                I am an Informatics Engineering student at Dian Nuswantoro
+                University with a strong interest in web application
+                development. I specialize in building responsive and
+                user-friendly web applications using modern technologies such as
+                React.js, JavaScript, Tailwind CSS, Express.js, REST API, PHP,
+                and MySQL. I enjoy learning new technologies, solving real-world
+                problems, and continuously improving my technical skills to
+                develop efficient and impactful software solutions.
               </p>
             </div>
             <div
@@ -41,25 +38,51 @@ const About = () => {
               <h3 className="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl">
                 My Experience
               </h3>
-              <ul className="list-disc list-inside text-secondary">
-                <li className="mb-3">
-                  💻 Participated in an internship program at Stimik WP
-                  University for 6 months
-                </li>
-                <li className="mb-5">
-                  💻 Participated in fun coding training organized by BUMN for 2
-                  months
-                </li>
-                <li className="mb-3">
-                  💻 Passed the LSP-P1 software engineering exam
-                </li>
-                <li className="mb-3">
-                  💻 Currently developing a digital invitation website startup
-                </li>
-              </ul>
+
+              <div className="space-y-4 text-secondary">
+                <div className="flex items-start gap-3">
+                  <span>💻</span>
+                  <p>
+                    Completed an Information Technology internship at STIMIK
+                    Widya Pratama.
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <span>💻</span>
+                  <p>
+                    Completed a Web Development training program at Coding Asyik
+                    Telkom Pekalongan.
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <span>💻</span>
+                  <p>
+                    Participated in the Full Stack Developer Coding Camp powered
+                    by DBS Foundation.
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <span>💻</span>
+                  <p>
+                    Earned the LSP-P1 Software Engineering Competency
+                    Certification.
+                  </p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <span>💻</span>
+                  <p>
+                    Designed and developed a digital wedding invitation web
+                    application as a personal project.
+                  </p>
+                </div>
+              </div>
               <button
                 onClick={() => navigate("/Gallery")}
-                className="px-6 py-2 bg-[#FF9D1A] text-white rounded-lg text-sm font-semibold focus:outline-none ml-8 tracking-[0.3em]"
+                className="mt-4 px-6 py-2 bg-[#FF9D1A] text-white rounded-lg text-sm font-semibold focus:outline-none ml-8 tracking-[0.3em]"
               >
                 📖Gallery
               </button>
